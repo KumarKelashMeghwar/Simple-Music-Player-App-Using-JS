@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 95vh;
+    background-color: rgb(186, 216, 206);
+    /* background-color: #f6f6f6; */
+}
+
+.container {
+    width: 330px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(150, 146, 146, 0.5), -5px -5px 10px rgba(150, 146, 146, 0.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .titleText h3,
+.container .titleText h4 {
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 0.4px;
+}
+
+.container .titleText h3 {
+    color: rgb(32, 32, 156);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container .titleText h4 {
+    color: rgb(196, 186, 173);
+}
+
+.container .image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: hue-rotate(80deg);
+    box-shadow: 5px 5px 10px 5px rgba(150, 146, 146, 0.5);
+}
+
+.container .playArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.container .playArea div {
+    cursor: pointer;
+}
+
+.container .playArea .playBtn {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+/* JavaScript Added Class */
+
+.anime {
+    animation: anime 3s linear infinite;
+}
+
+@keyframes anime {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
